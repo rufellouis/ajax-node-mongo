@@ -1,0 +1,43 @@
+
+
+// Entrada completa
+//.................
+.capa-entrada{
+	@include flex;
+	justify-content: space-between;
+	height: 40px;
+}
+
+
+// Capa para
+// los párrafos
+//.............
+.capa-datos{
+	@include flex;
+}
+.capa-datos p{
+	margin-right: 10px;
+}
+
+
+// Botón cross cerrar
+//...................
+.close-cross{
+	@include flex;
+	width: 20px;
+	height: 20px;
+	color: darken(lavender, 10%);
+	background-color: lavender;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: all, .2s;
+	&:hover{
+		color: darken(red, 10%);
+		background-color: red;
+		transform: rotate(90deg);
+	}
+	&:active{
+		transition: none;
+		color: lighten(red, 30%);
+	}
+}
